@@ -1,138 +1,223 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-.container{
-  width: 700px; 
+/* main */
+
+.container {
+  width: 50em;
   margin: auto;
   background-color: whitesmoke;
 }
 
-body{
-  background-color:wheat;
-  /* background-image: url(bg_img.png); */
+body {
+  background-color: #4e6e81;
 }
 
-.header{
-  padding: 10px;
-  border-top: 3px solid wheat;
+.header {
+  padding: 1.4em;
+  padding-bottom: 0;
+  background-color: #2e3840;
 }
 
-.header .judul{
-  font-size: 35px;
+.header .judul {
+  color: #f9dbbb;
+  font-size: 2.5rem;
   font-weight: bold;
-  font-family: sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
 }
 
-.header ul li{
+nav {
+  background-color: #2e3840;
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+}
+
+.nav ul li {
   display: inline-block;
-  font-size: 13px;
+  font-size: 0.8rem;
+  font-weight: bold;
   margin-right: 5px;
   margin-top: 20px;
   font-family: sans-serif;
-  font-weight: bold;
 }
 
-.header a{
-  color: brown;
+.nav a {
+  color: #f9dbbb;
   text-decoration: none;
-  padding: 5px;
+  padding: 0.5em;
 }
 
-.header a:hover{
-  background-color: sandybrown;
+.nav a:hover {
+  background-color: #4e6e81;
+  padding: 0.5em;
   border-radius: 3px;
 }
 
-.hero{
-  height: 280px;
+.hero {
+  height: 25em;
   background-image: url(img.jpg);
   background-size: cover;
-  background-position: 0 -75px;
-  border-top: 4px solid brown;
+  background-position: 0 -10px;
 }
 
-.content{
-  padding: 18px;
+.content {
+  padding: 2em;
 }
 
-.content h2{
-  font-size: 22px;
+.content h2 {
+  font-size: 1.9rem;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-p{
-  font-size: 14px;
-  margin-bottom: 15px;
-  margin-top: -10px;
-}
-
-.penulis{
-  font-size: 10px;
-}
-
-.penulis a{
-  text-decoration: none;
-  color: brown;
-  font-weight: bold;
+.penulis {
+  font-size: 0.8rem;
   font-family: sans-serif;
+  color: #888;
+  padding-top: 0.5em;
 }
 
-.footer{
+.text {
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.8em;
+}
+
+.footer {
   background-color: #333;
   padding: 5px;
 }
 
-.footer .copy{
+.footer .copy {
   color: #eaeaea;
   text-align: center;
   font-size: 10px;
   margin-top: 10px;
   font-family: sans-serif;
 }
+
+/* main end */
