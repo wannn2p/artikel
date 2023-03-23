@@ -125,14 +125,18 @@ table {
 
 /* main */
 
-.container {
-  width: 50em;
-  margin: auto;
-  background-color: whitesmoke;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #395d72;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
-body {
-  background-color: #4e6e81;
+.container {
+  max-width: 48em;
+  margin: auto;
+  background-color: whitesmoke;
 }
 
 .header {
@@ -207,16 +211,68 @@ nav {
   line-height: 1.8em;
 }
 
-.footer {
+footer {
   background-color: #333;
-  padding: 5px;
+  height: 13em;
+  box-sizing: border-box;
 }
 
-.footer .copy {
-  color: #eaeaea;
-  text-align: center;
-  font-size: 10px;
-  margin-top: 10px;
+.row-1 {
+  background-color: #333;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 0 8px 0;
+}
+
+.row-1 .col-1 {
+  color: #f9dbbb;
+  font-style: italic;
+  font-size: 1.5rem;
+  margin-left: -150px;
+}
+
+.row-1 .col-2 {
+  color: #bbb;
+  margin-top: 8px;
+}
+
+.row-2 {
+  display: flex;
+  margin: 5px 45px;
+}
+
+.row-2 .col-1 {
+  display: flex;
+}
+
+.row-2 .col-2 {
+  display: flex;
+  margin-left: 32px;
+}
+
+.row-2 ul li a {
+  margin-left: 3em;
+  font-family: sans-serif;
+  color: #ccc;
+  font-size: 0.7rem;
+  padding: 0.6em;
+  text-decoration: none;
+  line-height: 1.5em;
+  font-weight: bold;
+}
+
+.row-3 {
+  display: flex;
+  justify-content: center;
+  line-height: 50px;
+  margin: 50px auto;
+}
+
+.row-3 .col p {
+  color: #ccc;
+  font-size: 0.8rem;
   font-family: sans-serif;
 }
 
